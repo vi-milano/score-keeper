@@ -3,10 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Score Keeper</title>
+    <link rel="stylesheet" href="assets/css/scorekeeper.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <h1>Score Keeper</h1>
+
+    <div>
+        <h2>
+            <span id="p1name">Player 1</span>
+                VS 
+            <span id="p2name">Player 2</span>
+        </h2>
+        <p id="score">
+            <span id="p1score">
+                0
+            </span> 
+            to 
+            <span id="p2score">
+                0
+            </span>
+        </p>
+    </div>
+
+    <div>
+        <p>Win condition</p>
+        <input type="number" name="winCondition" id="winCondition" min="1">
+    </div>
+
+    <div id="winButtonDiv">
+        <button id="p1button">Player 1 Win</button>
+        <button id="p2button">Player 2 Win</button>
+    </div>
+
+    <div id="nameInputDiv">
+        <label for="p1nameInput">Player 1 name:</label>
+        <input type="text" name="p1nameInput" id="p1nameInput">
+
+        <label for="p2nameInput">Player 2 name:</label>
+        <input type="text" name="p2nameInput" id="p2nameInput">
+    </div>
 </body>
 </html>
